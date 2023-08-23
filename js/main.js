@@ -309,7 +309,7 @@
 const navBarFunc = window.addEventListener('scroll', () => {
 	let getElement = document.querySelector('.fixed-nav');
 	let allowScroll = false;
-	if(window.scrollY >= 50) {
+	if(window.scrollY >= 90) {
         getElement.classList.add('fixed-top');
         allowScroll = true;
     } else {
@@ -319,4 +319,39 @@ const navBarFunc = window.addEventListener('scroll', () => {
 })
 
 document.getElementById('date').innerText = new Date().getFullYear()
+
+
+//hide items section
+
+let clickButton = document.querySelector('.click-button-section');
+let hiddenItems = document.querySelector('.hide-item');
+let iconTrue = document.querySelector('.ds-true');
+let iconFalse = document.querySelector('.ds-non');
+let asynFunction = false;
+
+iconFalse.classList.add('apply-js');
+hiddenItems.classList.add('apply-js');
+
+const section = clickButton.addEventListener('click', () => {
+	if (asynFunction === false) {
+		iconFalse.classList.remove('add-js-to-icon');
+		iconTrue.classList.remove('add-js-to-icon');
+		iconTrue.classList.remove('apply-js');
+		iconFalse.classList.add('apply-js');
+		hiddenItems.classList.remove('apply-js');
+		asynFunction = true;
+	} else {
+		iconFalse.classList.add('add-js-to-icon');
+		iconTrue.classList.add('add-js-to-icon');
+		iconTrue.classList.add('apply-js');
+		iconFalse.classList.remove('apply-js');
+		hiddenItems.classList.add('apply-js');
+		asynFunction = false;
+
+	}
+})
+
+
+
+
 
