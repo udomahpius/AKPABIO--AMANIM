@@ -116,6 +116,9 @@
                 box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 
             }
+            .gd{
+                background: linear-gradient( 135deg, #FFCF71 10%, #2376DD 100%) !important;
+            }
 
 
             .bottom-line{
