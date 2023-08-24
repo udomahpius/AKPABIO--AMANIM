@@ -112,6 +112,9 @@
                 .article-height{
                     height: 100% !important;
                     }
+                    .heading-section{
+                        font-size: 3rem !important;
+                    }
         
             }
             
