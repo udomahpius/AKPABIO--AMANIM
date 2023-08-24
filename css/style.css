@@ -70,8 +70,14 @@
             .py{
                 padding: 2rem;
             }
+            .pt-3{
+                padding-top: 3rem !important;
+            }
             .dark-bg p{
                 color: #fff !important;
+            }
+            .bg-white{
+                background-color: white;
             }
             .dark-bg{
                 background-color: var(--navy-dark-bg);
@@ -91,17 +97,29 @@
             .mt-0{
                 margin-top: 0 !important;
             }
+            .mt-5{
+                margin-top: 7rem !important;
+            }
             .fs-big{
                 font-size: 4rem !important;
             }
 
             /* GLOBAL CSS */
-            
-            .set-height .services, .item-height .col-md-4{
-            height: 50vh !important;
+            .article-height{
+                height: 60vh;
             }
             @media screen and (max-width:700px) {
-                .set-height .services, .item-height .col-md-4{
+                .article-height{
+                    height: 100% !important;
+                    }
+        
+            }
+            
+            .set-height .services, .item-height .col-md-4, .card-height{
+            height: 55vh !important;
+            }
+            @media screen and (max-width:700px) {
+                .set-height .services, .item-height .col-md-4, .card-height{
                     height: 100% !important;
                     }
         
@@ -119,10 +137,31 @@
             .gd{
                 background: linear-gradient( 135deg, #FFCF71 10%, #2376DD 100%) !important;
             }
+            .gd-2{
+                background: linear-gradient( 89.9deg,  rgba(255,243,110,1) 16.9%, rgba(30,204,214,1) 55.1%, rgba(5,54,154,1) 90.7% ) !important;            }
+            .gd-3{
+                background-image: linear-gradient( 135deg, #F0FF00 10%, #58CFFB 100%) !important;
+            }
+            .gd-24{
+                background-image: linear-gradient( 135deg, #C2FFD8 10%, #465EFB 100%) !important;
+            }
 
+            .list-style-non{
+                list-style: none !important;
+            }
+            .list-font{
+                /* font-family: Arial, Helvetica, sans-serif !important; */
+                color: #000 !important;
+                font-size: 2rem !important;
+            }
 
             .bottom-line{
             border-bottom: 10px var(--electric-blue-color) double;
+            }
+
+            .bl{
+                border: 10px var(--electric-blue-color) double;
+ 
             }
 
             .bg-gradiant{
@@ -150,7 +189,16 @@
             color: #828282;
             background: #fff;
             }
-
+/* About section */
+.background-image{
+    background-image: url(/images/akpabio-1-removebg-preview.png);
+    background-size:contain !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: soft-light;
+    background-color: var(--navy-blue-bg);
+    
+}
             #page {
             position: relative;
             overflow-x: hidden;
